@@ -1,24 +1,60 @@
-import logo from './logo.svg';
+import dounload from './download.jpeg';
+import mes from './mes.jpeg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-background">
+
+      
+      <div className="App" style={{ backgroundImage: `url(${dounload})` }}>
+                      
+     
+        <div className="welcome-container">
+  
+          <div>
+      <button className="nav-button">HOME</button>
+      <button className="nav-button">MENU</button>
+      <button className="nav-button">ABOUT</button>
+      <button className="nav-button">SHOP</button>
+     </div>
+     <div>
+      <img src={mes} className="imgm"></img>
+        
+      
+      <div className="text-box">
+      <h1>Welcome to our restorant</h1>
+      <h2>"Made with love, served with warmth."<br/>
+Feel at home in every bite.</h2>
+
+     </div>
+     <div>
+      
+     </div>
+     
+        </div>
+     
+     </div>
+     
+     <div className="vertical-text"> 
+  {'MESOB'.split('').map((char, index) => (
+    <span key={index} className="sparkle-text">{char}</span>
+  ))}
+  
+</div>
+
+     
     </div>
+    
+      
+      
+      
+    </div>
+    
+    
+   
+
   );
 }
 

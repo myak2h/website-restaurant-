@@ -1,38 +1,140 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-button{
+  padding: 20px;
+  margin-left: 200px;
+  border-radius: 20px; 
+  border-color:transparent;
+  background-color: transparent;
+  color:white;
+   margin-bottom: 10px; 
+  
+  font-size: large;
+  text-shadow:1px 1px 3px yellow;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.App{
+  height: 100vh;
+  position: relative;
+  background-color: transparent;
+  
+  z-index: 1000;
+  background-position: center;
+  display: flex;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-button:hover{
+  background-color: bisque;
+  color: black;
+}
+.nav-button:active{
+  background-color: white;
+}
+.vertical-text{
+  position: absolute;
+  top: 0;
+  left: 0; /* LEFT SIDE */
+  z-index: 1000; /* Ensure it's in front of everything */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #FFA500;
+  background-color: black; /* Optional for better contrast */
+  height: 100vh;;
+  /* Optional for visibility */
+}
+.ethiopian-text {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  background: linear-gradient(to right, rgb(236, 239, 236), rgb(63, 63, 4), rgb(98, 5, 5));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideColors 5s linear infinite;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes slideColors {
+  0% { background-position: 0% }
+  100% { background-position: 200% }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes sparkle {
+  0% {
+    background-position: -200%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 200%;
   }
 }
+.sparkle-text{
+  background: url('./colorful.jpeg');
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: sparkle 2s linear infinite;
+}
+.App-background{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.welcome{
+color: #1a1a1a;
+text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7);
+
+font-style: italic;
+text-align: left;
+margin-left: 60px;
+padding-top: 0px;
+ font-family: 'Pacifico', cursive;
+ margin-top: 10px;
+ 
+}
+.text-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  color: rgb(240, 237, 237);
+  text-align: left;
+  margin-left:100px;
+  
+}
+.welcome-container{
+  display: grid;
+}
+.mesob{
+  height: 40px;
+}
+.imgm{
+  margin-left: 1px;
+  border-color: #FFA500;
+  box-shadow: #6a4706;
+}
+  
+
+
+  
+  
+  
+  .habesha{
+    height: 1000px;
+    width: 300px;
+  }
+  .ethiopea{
+    font-size:70px;
+  }
+   
+  
+ 
+
+
+
