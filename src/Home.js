@@ -1,6 +1,7 @@
 import React from 'react';
 import dounload from './download.jpeg';
 import mes from './mes.jpeg';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 const Home = () => {
   return <div>
@@ -12,12 +13,7 @@ const Home = () => {
      
         <div className="welcome-container">
   
-          <div>
-      <button className="nav-button">HOME</button>
-      <button className="nav-button">MENU</button>
-      <button className="nav-button">ABOUT</button>
-      <button className="nav-button">SHOP</button>
-     </div>
+          
      <div>
       <img src={mes} className="imgm"></img>
         

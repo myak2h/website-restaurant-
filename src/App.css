@@ -4,16 +4,34 @@
 .nav-button{
   padding: 20px;
   margin-left: 200px;
-  border-radius: 20px; 
+  border-radius: 10px; 
   border-color:transparent;
-  background-color: transparent;
-  color:rgb(225, 15, 15);
+  background-color:rgb(232, 232, 5);
+  color:solid black;
    margin-bottom: 10px; 
+   height: 10px;
+
+   align-items: center;
+   margin-top: 2px;
+  padding-top: 20px;
+  justify-content: center;
+   
+
+  text-align: center;
+    
   
   font-size: large;
-  text-shadow:1px 1px 3px yellow;
+  text-shadow:1px 1px 3px rgb(159, 159, 6);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.button-box{
+  background-color: transparent;
+  
+  border-radius: 30px;
+  height: 90px;
+  margin-left: 50px;
+}
+
 .App{
   height: 100vh;
   position: relative;
@@ -27,10 +45,10 @@
 }
 .nav-button:hover{
   background-color: bisque;
-  color: black;
+  color: rgb(172, 178, 9);
 }
 .nav-button:active{
-  background-color: white;
+  background-color: white( 0 0 0 0.5);
 }
 .vertical-text{
   position: absolute;
@@ -42,9 +60,10 @@
   align-items: center;
   padding: 10px;
   font-size: 5rem;
+  margin-left: 0;
   font-weight: bold;
   color: #FFA500;
-  background-color: black; /* Optional for better contrast */
+  background-color:black; /* Optional for better contrast */
   height: 100vh;;
   /* Optional for visibility */
 }
@@ -77,7 +96,7 @@
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: sparkle 2s linear infinite;
+  animation: sparkle 6s ease-in-out infinite;
 }
 .App-background{
   height: 100vh;
@@ -103,7 +122,7 @@ padding-top: 0px;
   padding: 12px 20px;
   border-radius: 8px;
   display: inline-block;
-  color: rgb(240, 237, 237);
+  color:white;
   text-align: left;
   margin-left:100px;
   
@@ -115,9 +134,11 @@ padding-top: 0px;
   height: 40px;
 }
 .imgm{
-  margin-left: 1px;
+  margin-left: 50px;
+  margin-top: 100px;
   border-color: #FFA500;
   box-shadow: #6a4706;
+  border-radius: 50px;
 }
   
 
@@ -132,9 +153,52 @@ padding-top: 0px;
   .ethiopea{
     font-size:70px;
   }
-   
+  .about-content{
+    background-color: #9f6302(0 0 0 0.5);
+    font-size: large;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 20px;
+    color: rgb(2, 87, 87);
+    border-radius: 30px;
+    border-color:  aliceblue;
+    border: 0px solid rgb(95, 95, 3);
+    align-items: center;
+    
+  }
+.about-page{
+  background-image: url('./download.jpeg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-imge{
+  opacity: 0.5;
   
- 
+}
+.horizontal-text{
+  display: flex;
+  gap: 0.5rem; /* adjust the space between letters */
+  justify-content: center; /* optional: center horizontally */
+  align-items: center;
+  font-size: 5rem;
+}
+.menu-container{
+  background-image: url('./download.jpeg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  color: white;
+  
+}
 
 
 
